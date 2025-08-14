@@ -1,2 +1,3 @@
-data/*
+data/pgadmin
+data/postgres
 !data/.gitkeep
