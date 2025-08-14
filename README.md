@@ -23,7 +23,7 @@ C:\Services\postgresql-pgadmin\data\
 ### 1. **PostgreSQL 17.5**
 - **Imagen:** `postgres:17.5`
 - **Usuario por defecto:** `postgres`
-- **Contraseña:** `postgres`
+- **Contraseña:** `d3veI0pM3nT`
 - **Base de datos inicial:** `tasstech`
 - **Puerto expuesto:** `5432`
 - **Volúmenes:**
@@ -35,7 +35,7 @@ C:\Services\postgresql-pgadmin\data\
 ### 2. **pgAdmin 4 (última versión estable)**
 - **Imagen:** `dpage/pgadmin4:9.6.0`
 - **Email de acceso:** `development@tass.com.co`
-- **Contraseña:** `development`
+- **Contraseña:** `d3veI0pM3nT`
 - **Puerto expuesto:** `5050` (interfaz web accesible en `http://localhost:5050`)
 - **Volumen:**
   - `C:/Services/postgresql-pgadmin/data/pgadmin:/var/lib/pgadmin` → persistencia de configuraciones
@@ -72,13 +72,13 @@ C:\Services\postgresql-pgadmin\data\
   - Host: `localhost`
   - Puerto: `5432`
   - Usuario: `postgres`
-  - Contraseña: `postgres`
+  - Contraseña: `d3veI0pM3nT`
   - Base de datos: `tasstech`
 
 - **pgAdmin 4:**
   - URL: [http://localhost:5050](http://localhost:5050)
   - Email: `development@tass.com.co`
-  - Contraseña: `development`
+  - Contraseña: `d3veI0pM3nT`
 
 > Dentro de pgAdmin, deberás crear una conexión al servidor PostgreSQL usando las credenciales anteriores.
 
@@ -94,7 +94,7 @@ Por defecto, pgAdmin **no detecta automáticamente** la base de datos de Postgre
 1. **Accede a pgAdmin:**
    - URL: [http://localhost:5050](http://localhost:5050)  
    - Email: `development@tass.com.co`  
-   - Contraseña: `development`
+   - Contraseña: `d3veI0pM3nT`
 
 2. **Crear un nuevo servidor:**
    - En el panel izquierdo, clic derecho en **Servers** → **Register** → **Server...**
@@ -107,7 +107,7 @@ Por defecto, pgAdmin **no detecta automáticamente** la base de datos de Postgre
    - **Port:** `5432`
    - **Maintenance database:** `tasstech`
    - **Username:** `postgres`
-   - **Password:** `postgress`
+   - **Password:** `d3veI0pM3nT`
    - Marca la casilla **Save Password** para no introducirla cada vez.
 
 5. **Guardar y probar conexión.**
