@@ -1,0 +1,47 @@
+# =========================
+# Configuración general
+# =========================
+* text=auto eol=lf
+
+# Forzar UTF-8 para todos los archivos de texto
+*.md text working-tree-encoding=UTF-8
+*.yml text working-tree-encoding=UTF-8
+*.yaml text working-tree-encoding=UTF-8
+*.env text working-tree-encoding=UTF-8
+*.json text working-tree-encoding=UTF-8
+*.gitignore text working-tree-encoding=UTF-8
+*.gitattributes text working-tree-encoding=UTF-8
+
+# =========================
+# Archivos binarios (sin diff)
+# =========================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# =========================
+# Docker & configuración
+# =========================
+docker-compose*.yml text eol=lf
+Dockerfile text eol=lf
+
+# =========================
+# Scripts
+# =========================
+*.sh text eol=lf
+*.ps1 text eol=crlf
+
+# =========================
+# Datos y dumps
+# =========================
+*.sql text eol=lf
+*.dump binary
+*.bak binary
+
+# =========================
+# Evitar merge automático en archivos sensibles
+# =========================
+.env merge=union

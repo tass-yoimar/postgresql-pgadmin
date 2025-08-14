@@ -1,0 +1,33 @@
+{
+    "name": "postgresql-pgadmin",
+    "version": "1.0.0",
+    "description": "Entorno de desarrollo local con PostgreSQL 17.5 y pgAdmin 4 en Docker para Windows, con volúmenes mapeados a rutas locales.",
+    "author": {
+        "name": "Yoimar Moreno Bertel",
+        "email": "yoimar.moreno@tass.com.co"
+    },
+    "license": "TASSTECH INTERNAL USE ONLY",
+    "keywords": [
+        "docker",
+        "postgresql",
+        "pgadmin",
+        "docker-compose",
+        "database",
+        "development-environment",
+        "windows"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tass-yoimar/postgresql-pgadmin-dev-env"
+    },
+    "engines": {
+        "docker": ">=20.10.0",
+        "docker-compose": ">=1.29.0"
+    },
+    "scripts": {
+        "start": "docker-compose up -d",
+        "stop": "docker-compose down",
+        "restart": "docker-compose down && docker-compose up -d",
+        "clean": "docker-compose down -v"
+    }
+}
